@@ -13,7 +13,7 @@ const Login = () => {
   const password= formdata.get("password");
 
   try {
-    const res= await fetch("http://localhost:5000/api/login",{
+    const res= await fetch("https://mytodo-app-1-q64i.onrender.com/api/login",{
       method:"POST",
       headers:{"Content-Type": "application/json"},
       body:JSON.stringify({email,password})

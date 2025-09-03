@@ -4,15 +4,7 @@ import Task from '../Task';
 
 
 const List = ({id,title,onDelete}) => {
-    const handledelete=()=>{
-        try {
-          const res= fetch("http://localhost:5000/api/deletetask",{
-            method:"POST",
-          })
-        } catch (error) {
-          
-        }
-    }
+    
   return (
     <div>
         <div className='flex justify-center mb-3'>

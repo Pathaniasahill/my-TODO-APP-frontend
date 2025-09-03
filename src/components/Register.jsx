@@ -16,7 +16,7 @@ const Register = () => {
        const location= formdata.get("location")
     
        try {
-        const res= await fetch("http://localhost:5000/api/register",{
+        const res= await fetch("https://mytodo-app-1-q64i.onrender.com/api/register",{
           method:"POST",
           headers:{"Content-Type":"application/json"},
           body:JSON.stringify({firstname,lastname,mobilenumber,email,password,location})

@@ -9,7 +9,7 @@ const Workpage = () => {
 
   const handledelete=async(id)=>{
         try {
-          const res=await fetch("http://localhost:5000/api/deletetask",{
+          const res=await fetch("https://mytodo-app-1-q64i.onrender.com/api/deletetask",{
             method:"POST",
             headers: { "Content-Type": "application/json" },
             body:JSON.stringify({id})
@@ -28,7 +28,7 @@ const Workpage = () => {
  
 const fetchTasks = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/gettask", {
+        const res = await fetch("https://mytodo-app-1-q64i.onrender.com/api/gettask", {
           method: "POST", // or GET if your backend allows
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email: localStorage.getItem("useremail") }),
@@ -58,7 +58,7 @@ const fetchTasks = async () => {
     const email = localStorage.getItem("useremail");
 
     try {
-      const res = await fetch("http://localhost:5000/api/addtask", {
+      const res = await fetch("https://mytodo-app-1-q64i.onrender.com/api/addtask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, task }),
